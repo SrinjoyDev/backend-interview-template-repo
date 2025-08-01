@@ -1,0 +1,46 @@
+{
+  "name": "backend-interview-template",
+  "version": "1.0.0",
+  "description": "Backend Developer Interview Assessment - Multi-Source Data Aggregator",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "start": "node dist/index.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "mock-apis": "ts-node src/mock-apis/server.ts",
+    "lint": "eslint src/**/*.ts",
+    "solution": "ts-node src/index-solution.ts",
+    "test:solution": "jest --testPathPattern=solution"
+  },
+  "keywords": [
+    "backend",
+    "interview",
+    "assessment",
+    "nodejs",
+    "typescript"
+  ],
+  "author": "Interview Team",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.8",
+    "@types/node": "^20.10.0",
+    "@types/supertest": "^2.0.16",
+    "@typescript-eslint/eslint-plugin": "^6.12.0",
+    "@typescript-eslint/parser": "^6.12.0",
+    "eslint": "^8.54.0",
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3",
+    "ts-jest": "^29.1.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.2"
+  }
+}
