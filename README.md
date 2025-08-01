@@ -4,7 +4,7 @@
 
 Welcome to our backend developer assessment! This challenge tests your ability to build efficient, scalable backend services that aggregate data from multiple sources using modern JavaScript/TypeScript patterns.
 
-## 📋 Overview
+## Overview
 
 You need to implement a service that:
 - Fetches user data from multiple mock APIs concurrently
@@ -12,7 +12,7 @@ You need to implement a service that:
 - Handles errors gracefully
 - Provides metrics and monitoring capabilities
 
-## 🎯 Assessment Goals
+## Assessment Goals
 
 This assessment evaluates your skills in:
 - **Asynchronous Programming**: Promise.all, async/await mastery
@@ -22,7 +22,7 @@ This assessment evaluates your skills in:
 - **Code Quality**: TypeScript usage, clean architecture, and maintainability
 - **Testing**: Unit tests and integration testing practices
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Node.js 18+ and npm
@@ -51,7 +51,7 @@ This assessment evaluates your skills in:
    npm test
    ```
 
-## 📚 Mock APIs Available
+## Mock APIs Available
 
 The following mock APIs are provided for testing:
 
@@ -66,7 +66,7 @@ The following mock APIs are provided for testing:
 - 10% random failure rate to test error handling
 - Various HTTP error codes (404, 500, 502, 503)
 
-## 🎯 Your Tasks
+## Your Tasks
 
 ### Core Implementation (Required)
 
@@ -136,33 +136,6 @@ Implement these for extra credit:
 - **Rate Limiting**: Respect external API rate limits
 - **Streaming**: Support streaming responses for large batches
 
-## ✅ Evaluation Criteria
-
-### Functionality (40%)
-- [ ] All required methods implemented correctly
-- [ ] Main API endpoint works as specified
-- [ ] Proper use of Promise.all for concurrent operations
-- [ ] Correct data aggregation and transformation
-
-### Error Handling (25%)
-- [ ] Graceful handling of API failures
-- [ ] Partial success scenarios handled properly
-- [ ] Appropriate HTTP status codes and error messages
-- [ ] Network timeouts and edge cases covered
-
-### Performance (20%)
-- [ ] Concurrent processing implementation
-- [ ] Reasonable response times (< 2 seconds for 5 users)
-- [ ] Efficient memory usage
-- [ ] No unnecessary sequential operations
-
-### Code Quality (15%)
-- [ ] Clean, readable TypeScript code
-- [ ] Proper type definitions usage
-- [ ] Good separation of concerns
-- [ ] Meaningful variable and function names
-- [ ] Appropriate error logging
-
 ## 🧪 Testing
 
 Run the test suite to validate your implementation:
@@ -193,24 +166,3 @@ Your implementation should achieve:
 - ✅ Proper TypeScript types and no compilation errors
 - ✅ Clean, maintainable code structure
 
-## 🔧 Debugging Tips
-
-1. **Check Mock APIs**: Ensure mock APIs are running on port 3001
-2. **Network Issues**: Use `curl` to test mock APIs directly
-3. **Timeout Issues**: Adjust timeout values in BatchService constructor
-4. **Test Failures**: Read test descriptions carefully for requirements
-
-## 📝 Submission Guidelines
-
-1. Implement all required functionality
-2. Ensure all tests pass
-3. Add any additional tests you think are valuable
-4. Include brief comments explaining your approach
-5. Document any assumptions or design decisions
-
-## 🎓 Learning Resources
-
-- [Promise.all Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all)
-- [Async/Await Best Practices](https://javascript.info/async-await)
-- [Error Handling in Node.js](https://nodejs.org/api/errors.html)
-- [TypeScript Handbook](https://www.typescriptlang.org/docs/)
